@@ -21,6 +21,7 @@ import time
 
 def main( arguments ):
     driver = webdriver.Firefox()
+    #driver = webdriver.PhantomJS('phantomjs')
     driver.get("https://www.irissmarthome.com/myhome")
 
     username_element = driver.find_element_by_id('username')
